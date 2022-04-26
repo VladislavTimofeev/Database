@@ -17,8 +17,8 @@ values
 ('Dima', 'Urchenko', 24, 3, 2),
 ('Vasya', 'Cheburashko', 33, 4, 2);
 
-INSERT INTO Products  (ProductName, ProductCount, Price)
-VALUES
+insert into products  (productName, productCount, price)
+values
 ('iPhone X', 2, 71000),
 ('iPhone 8', 3, 56000),
 ('Galaxy S9', 6, 56000),
@@ -26,7 +26,7 @@ VALUES
 ('Desire 12', 3, 26000),
 ('Galaxy A50', 20, 2500);
 
-insert into brand(name)
+insert into brands(name)
 values
 ('Apple'),
 ('Sumsung'),

@@ -15,6 +15,7 @@ create table users
 	country_id integer,
 	role_id integer,
 	FOREIGN KEY (role_id) REFERENCES roles(id)
+	FOREIGN KEY (country_id) REFERENCES countries(id)
 );
 
 create table countries

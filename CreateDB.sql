@@ -22,3 +22,20 @@ create table countries
 	id serial primary key,
 	country_name character varying(30)
 );
+
+CREATE TABLE Products
+(
+    id SERIAL PRIMARY KEY,
+    productName VARCHAR(30) NOT NULL,
+    productCount INTEGER DEFAULT 0,
+    price NUMERIC
+    brand_id integer
+    FOREIGN KEY (brand_id) REFERENCES brand(id)
+
+);
+
+create table brand
+(
+	id serial primary key,
+	name character varying(30)
+);

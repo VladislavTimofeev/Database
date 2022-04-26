@@ -1,4 +1,4 @@
-CREATE DATABASE online_store_db
+create database online_store_db
 
 create table roles
 (
@@ -14,8 +14,8 @@ create table users
 	age smallint,
 	country_id integer,
 	role_id integer,
-	FOREIGN KEY (role_id) REFERENCES roles(id)
-	FOREIGN KEY (country_id) REFERENCES countries(id)
+	foreign key (role_id) references roles(id)
+	foreign key (country_id) references countries(id)
 );
 
 create table countries
@@ -24,19 +24,19 @@ create table countries
 	country_name character varying(30)
 );
 
-CREATE TABLE Products
+create table products
 (
-    id SERIAL PRIMARY KEY,
-    productName VARCHAR(30) NOT NULL,
-    productCount INTEGER DEFAULT 0,
-    price NUMERIC
-    brand_id integer
-    FOREIGN KEY (brand_id) REFERENCES brand(id)
+    id SERIAL primary key,
+    productName VARCHAR(30) not null ,
+    productCount INTEGER default 0,
+    price NUMERIC,
+    brand_id integer,
+    foreign key (brand_id) references brand(id)
 
 );
 
-create table brand
+create table brands
 (
 	id serial primary key,
-	name character varying(30)
+	brand_name character varying(30)
 );
